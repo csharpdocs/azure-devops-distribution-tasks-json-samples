@@ -1,0 +1,15 @@
+{
+    "variables": {
+        "Variable1": {
+            "value": "some value"
+        },
+        "Variable2": {
+            "value": "another value"
+        } 
+    },
+    "type": "Vsts",
+    "id": 1,
+    "comment": "Sample key value pair variable group",
+    "name": "Sample",
+    "description": "Sample key value pair variable group"
+}

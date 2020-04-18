@@ -1,0 +1,46 @@
+{
+	"serviceconnection": [{
+		"id": "service-endpoint-sonarcloud-connection",
+		"description": "Service endpoint type for SonarCloud connection",
+		"type": "ms.vss-endpoint.service-endpoint-type",
+		"targets": ["ms.vss-endpoint.endpoint-types"],
+		"properties": {
+			"data": {},
+			"description": "Service endpoint type for SonarCloud connection",
+			"id": "c7f81fb5-7510-4d0d-a62c-17b6e8512af6",				
+			"name": "SonarCloud",
+			"type": "sonarcloud",
+			"url": "https://sonarcloud.io",
+			"authorization": {
+				"parameters": {
+				  "apitoken": "your_sonalcloud_token"
+				},
+				"scheme": "token"
+			},
+			"isShared": true,
+            "isReady": true,
+            "owner": "Library"
+		}
+	}],
+    "revision": 1,
+    "comment": "Azure DevOps Service Connection for SonarCloud",
+    "createdBy": {
+        "displayName": "Your_Name",
+        "id": "generate_new_guid",
+        "uniqueName": "your_email@domain.com"
+    },
+    "createdOn": "2019-06-24T11:02:24.900Z",
+	"modifiedBy": {
+        "displayName": "Your_Name",
+        "id": "generate_new_guid",
+        "uniqueName": "your_email@domain.com"
+    },
+    "modifiedOn": "2019-06-24T11:02:24.900Z",
+    "id": "83f3003f-57a1-4e4f-b12b-ba3710ea9bb6",
+    "name": "Desa.ServiceConnection.SonarCloud",
+    "friendlyName": "Des-Azure Compliant SonarCloud Service Connection",
+    "instanceNameFormat": "ServiceConnection: Des-Azure Compliant SonarCloud Service Connection",
+    "category": "ServiceConnection",
+    "definitionType": "serviceconnection",
+    "author": "Your_Name"
+}

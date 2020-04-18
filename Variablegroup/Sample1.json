@@ -1,0 +1,16 @@
+{
+    "variables": {
+        "Variable1": {
+            "value": "some value",
+            "isSecret": true
+        },
+        "Variable2": {
+            "value": "another value"
+        } 
+    },
+    "type": "Vsts",
+    "id": 1,
+    "comment": "Sample1 key value pair variable group",
+    "name": "Sample1",
+    "description": "Sample1 key value pair variable group"
+}

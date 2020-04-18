@@ -1,0 +1,108 @@
+{
+    "tasks": [
+        {
+            "displayName": "Set Build.Assembly.Variables",
+            "alwaysRun": false,
+            "continueOnError": false,
+            "condition": "succeeded()",
+            "enabled": true,
+            "timeoutInMinutes": 0,
+            "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "$path=",
+                "errorActionPreference": "stop",
+                "failOnStderr": "true",
+                "ignoreLASTEXITCODE": "false",
+                "workingDirectory": "$(Build.SourcesDirectory)"
+            },
+            "task": {
+                "id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+            }
+        },
+        {
+            "displayName": "Run script VSDEVCMD",
+            "alwaysRun": false,
+            "continueOnError": false,
+            "condition": "succeeded()",
+            "enabled": true,
+            "timeoutInMinutes": 0,
+            "inputs": {
+                "filename": "$(VS150COMNTOOLS)VsDevCmd.bat",
+                "arguments": "",
+                "modifyEnvironment": "true",
+                "workingFolder": "",
+                "failOnStandardError": "true"
+            },
+            "task": {
+                "id": "bfc8bf76-e7ac-4a8c-9a55-a944a9f632fd",
+                "versionSpec": "1.*",
+                "definitionType": "task"
+            }
+        },
+        {
+            "displayName": "Display Environment Settings",
+            "alwaysRun": false,
+            "continueOnError": true,
+            "condition": "succeeded()",
+            "enabled": true,
+            "timeoutInMinutes": 0,
+            "inputs": {
+                "script": "Set",
+                "workingDirectory": "",
+                "failOnStderr": "false"
+            },
+            "task": {
+                "id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+            }
+        }
+    ],
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "revision": 1,
+    "comment": "Continuous Integration pipeline for an ASP.NET Core application",
+    "createdBy": {
+        "displayName": "your_name",
+        "id": "unique_guid",
+        "uniqueName": "your_email"
+    },
+    "createdOn": "2018-09-17T11:02:24.900Z",
+    "modifiedBy": {
+        "displayName": "your_name",
+        "id": "unique_guid",
+        "uniqueName": "your_email"
+    },
+    "modifiedOn": "2018-09-17T11:02:24.900Z",
+    "id": "5425b12b-8c3c-4a4e-8d27-a68aeac0d547",
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0,
+        "isTest": false
+    },
+    "isMinorChange": "false",
+    "iconUrl": "https://cdn.vsassets.io/v/20180844/_content/icon-meta-task.png",
+    "name": "YourCompanyOrTeam.Taskgroup.AspNetCore",
+    "friendlyName": "YourCompanyOrTeam Compliant ASP.NET Core Pipeline",
+    "instanceNameFormat": "Taskgroup: ASP.NET Core Pipeline",
+    "description": "YourCompanyOrTeam Compliant Azure DevOps CI pipeline for an ASP.NET Core Application",
+    "category": "Build",
+    "definitionType": "metaTask",
+    "author": "your_name",
+    "demands": [],
+    "groups": [],
+    "satisfies": [],
+    "sourceDefinitions": [],
+    "dataSourceBindings": [],
+    "inputs": [],
+    "preJobExecution": {},
+    "execution": {},
+    "postJobExecution": {}
+}

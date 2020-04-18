@@ -1,0 +1,193 @@
+# Build number format
+name: $(Date:yyyyMMdd)$(Rev:.r)
+
+# Declare your pipeline specific variables and variable groups
+# In this pipeline variable $(PersonalAccessToken) is declared in Practice.Generic.VariableGroup variable group
+variables:
+  - group: Practice.Generic.VariableGroup
+
+# Build Agent/Pool to run pipeline job
+pool:
+  vmImage: 'windows-2019'
+
+# Job details with template to execute
+# My Azure DevOps Projects: Practice, Project1, Project2, Project3, Project4
+jobs:
+  - job: Azure_DevOps_Distribution
+    displayName: 'Azure DevOps Project Resources Distribution'
+    workspace:
+      clean: all
+    steps:
+    # - task: DES-Azure-Variablgroup-Distribution@2
+    #   displayName: 'VG Distribution - Folder - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Neither'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Variablegroup'
+
+    # - task: DES-Azure-Variablgroup-Distribution@2
+    #   displayName: 'VG Distribution - Folder - Specific Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'TeamProjects'
+    #     Projects: 'Project1, Project2'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Variablegroup'
+
+    # - task: DES-Azure-Variablgroup-Distribution@2
+    #   displayName: 'VG Distribution - Folder - Exclude Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Exclude'
+    #     ExcludeTeamProjects: 'Project1, Project2'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Variablegroup'
+
+    # - task: DES-Azure-Variablgroup-Distribution@2
+    #   displayName: 'VG Distribution - Files - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'Neither'
+    #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json'
+
+    # - task: DES-Azure-Variablgroup-Distribution@2
+    #   displayName: 'VG Distribution - Files - Specific Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'TeamProjects'
+    #     Projects: 'Project1, Project2'
+    #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json, $(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample1.json'
+
+    # - task: DES-Azure-Variablgroup-Distribution@2
+    #   displayName: 'VG Distribution - Files - Exclude Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'Exclude'
+    #     ExcludeTeamProjects: 'Project1, Project2'
+    #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json, $(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample1.json'
+
+    # - task: DES-Azure-Taskgroup-Distribution@7
+    #   displayName: 'TG Distribution - Folder - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Neither'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Taskgroup'
+    #     DenyContributorEditPermission: false
+
+    # - task: DES-Azure-Taskgroup-Distribution@7
+    #   displayName: 'TG Distribution - Folder - Specific Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'TeamProjects'
+    #     Projects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Taskgroup'
+    #     DenyContributorEditPermission: false
+
+    # - task: DES-Azure-Taskgroup-Distribution@7
+    #   displayName: 'TG Distribution - Folder - Exclude Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Exclude'
+    #     ExcludeTeamProjects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Taskgroup'
+    #     DenyContributorEditPermission: false        
+
+    # - task: DES-Azure-Taskgroup-Distribution@7
+    #   displayName: 'TG Distribution - Files - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'Neither'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Files: '$(Build.SourcesDirectory)\\\\Taskgroup\\\\AspNetCore.json, $(Build.SourcesDirectory)\\\\Taskgroup\\\\Python.json'
+    #     DenyContributorEditPermission: false
+
+    # - task: DES-Azure-Taskgroup-Distribution@7
+    #   displayName: 'TG Distribution - Files - Specific Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'TeamProjects'
+    #     Projects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Files: '$(Build.SourcesDirectory)\\\\Taskgroup\\\\AspNetCore.json, $(Build.SourcesDirectory)\\\\Taskgroup\\\\Python.json'
+    #     DenyContributorEditPermission: false
+
+    # - task: DES-Azure-Taskgroup-Distribution@7
+    #   displayName: 'TG Distribution - Files - Exclude Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'Exclude'
+    #     ExcludeTeamProjects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Files: '$(Build.SourcesDirectory)\\\\Taskgroup\\\\AspNetCore.json, $(Build.SourcesDirectory)\\\\Taskgroup\\\\Python.json'
+    #     DenyContributorEditPermission: false
+
+    # - task: DES-Azure-Serviceconnection-Distribution@2
+    #   displayName: 'SC Distribution - Folder - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Neither'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Serviceconnection'
+
+    # - task: DES-Azure-Serviceconnection-Distribution@2
+    #   displayName: 'SC Distribution - Folder - Specific Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'TeamProjects'
+    #     Projects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Serviceconnection'
+
+    # - task: DES-Azure-Serviceconnection-Distribution@2
+    #   displayName: 'SC Distribution - Folder - Exclude Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Exclude'
+    #     ExcludeTeamProjects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Serviceconnection'        
+
+    # - task: DES-Azure-Serviceconnection-Distribution@2
+    #   displayName: 'SC Distribution - Files - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'Neither'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
+
+    # - task: DES-Azure-Serviceconnection-Distribution@2
+    #   displayName: 'SC Distribution - Files - Specific Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'TeamProjects'
+    #     Projects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
+
+    - task: DES-Azure-Serviceconnection-Distribution@2
+      displayName: 'SC Distribution - Files - Exclude Projects'
+      inputs:
+        Token: '$(PersonalAccessToken)'
+        FileOrFolderSelector: 'Files'
+        TeamProjectsToTarget: 'Exclude'
+        ExcludeTeamProjects: 'Project1, Project2'
+        CommitMessage: '$(Build.SourceVersionMessage)'
+        Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'

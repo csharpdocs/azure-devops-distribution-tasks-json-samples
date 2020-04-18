@@ -1,0 +1,71 @@
+{
+    "tasks": [
+        {
+            "displayName": "Set Build.Assembly.Variable",
+            "alwaysRun": false,
+            "continueOnError": false,
+            "condition": "succeeded()",
+            "enabled": true,
+            "timeoutInMinutes": 0,
+            "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "write-host Hello Python",
+                "errorActionPreference": "stop",
+                "failOnStderr": "true",
+                "ignoreLASTEXITCODE": "false",
+                "pwsh": "false",
+                "workingDirectory": ""
+            },
+            "task": {
+                "id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+                "versionSpec": "2.*",
+                "definitionType": "task"
+            }
+        }
+    ],
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "revision": 1,
+    "comment": "Continuous Integration pipeline for an python application",
+    "createdBy": {
+        "displayName": "your_name",
+        "id": "unique_guid",
+        "uniqueName": "your_email"
+    },
+    "createdOn": "2018-09-17T11:02:24.900Z",
+    "modifiedBy": {
+        "displayName": "your_name",
+        "id": "unique_guid",
+        "uniqueName": "your_email"
+    },
+    "modifiedOn": "2018-09-17T11:02:24.900Z",
+    "id": "5425b12b-8c3c-4a4e-8d27-a68aeac0d547",
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0,
+        "isTest": false
+    },
+    "isMinorChange": "false",
+    "iconUrl": "https://cdn.vsassets.io/v/20180844/_content/icon-meta-task.png",
+    "name": "YourCompanyOrTeam.Taskgroup.Python",
+    "friendlyName": "YourCompanyOrTeam Compliant Python Pipeline",
+    "instanceNameFormat": "Taskgroup: Python Pipeline",
+    "description": "YourCompanyOrTeam Compliant Azure DevOps CI pipeline for an Python Application",
+    "category": "Build",
+    "definitionType": "metaTask",
+    "author": "your_name",
+    "demands": [],
+    "groups": [],
+    "satisfies": [],
+    "sourceDefinitions": [],
+    "dataSourceBindings": [],
+    "inputs": [],
+    "preJobExecution": {},
+    "execution": {},
+    "postJobExecution": {}
+}

@@ -1,0 +1,47 @@
+{
+	"serviceconnection": [{
+		"id": "service-endpoint-splunk-connection",
+		"description": "Service endpoint type for Splunk connection",
+		"type": "ms.vss-endpoint.service-endpoint-type",
+		"targets": ["ms.vss-endpoint.endpoint-types"],
+		"properties": {
+			"data": {},
+			"description": "Service endpoint type for Splunk connection",
+			"id": "c7f81fb5-7510-4d0d-a62c-17b6e8512af6",				
+			"name": "Splunk-PR",
+			"type": "generic",
+			"url": "https://xxx.xxx.xxx.xxx/services/collector/raw",			
+			"authorization": {
+				"parameters": {
+				  "username": "<replace_me>",
+				  "password": "<replace_me>"
+				},
+				"scheme": "UsernamePassword"
+			},
+			"isShared": true,
+            "isReady": true,
+            "owner": "Library"
+		}
+	}],
+	"revision": 1,
+    "comment": "Azure DevOps Service Connection for Splunk",
+    "createdBy": {
+        "displayName": "Your_Name",
+        "id": "634b24c8-a69e-4538-84d0-3c4008ccd603",
+        "uniqueName": "email_address@domain.com"
+    },
+    "createdOn": "2019-06-20T11:02:24.900Z",
+    "modifiedBy": {
+        "displayName": "Your_Name",
+        "id": "634b24c8-a69e-4538-84d0-3c4008ccd603",
+        "uniqueName": "email_address@domain.com"
+    },
+    "modifiedOn": "2019-06-20T11:02:24.900Z",
+    "id": "83f3003f-57a1-4e4f-b12b-ba3710ea9bb6",
+    "name": "Desa.ServiceConnection.Splunk",
+    "friendlyName": "Des-Azure Compliant Splunk Service Connection",
+    "instanceNameFormat": "ServiceConnection: Des-Azure Compliant Splunk Service Connection",
+    "category": "ServiceConnection",
+    "definitionType": "serviceconnection",
+    "author": "Your_Name"
+}
