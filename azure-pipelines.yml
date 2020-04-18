@@ -2,9 +2,9 @@
 name: $(Date:yyyyMMdd)$(Rev:.r)
 
 # Declare your pipeline specific variables and variable groups
-# In this pipeline variable $(PersonalAccessToken) is declared in Practice.Generic.VariableGroup variable group
+# In this pipeline variable $(PersonalAccessToken) is declared in Csharpdocs.GitHub.Generic.Variables variable group
 variables:
-  - group: Practice.Generic.VariableGroup
+  - group: Csharpdocs.GitHub.Generic.Variables
 
 # Build Agent/Pool to run pipeline job
 pool:
