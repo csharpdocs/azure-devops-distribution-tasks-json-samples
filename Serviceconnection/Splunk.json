@@ -8,7 +8,7 @@
 			"data": {},
 			"description": "Service endpoint type for Splunk connection",
 			"id": "c7f81fb5-7510-4d0d-a62c-17b6e8512af6",				
-			"name": "Splunk-PR",
+			"name": "splunk-p-sc",
 			"type": "generic",
 			"url": "https://xxx.xxx.xxx.xxx/services/collector/raw",			
 			"authorization": {

@@ -8,7 +8,7 @@
 			"data": {},
 			"description": "Service endpoint type for SonarCloud connection",
 			"id": "c7f81fb5-7510-4d0d-a62c-17b6e8512af6",				
-			"name": "SonarCloud",
+			"name": "sonarcloud-p-sc",
 			"type": "sonarcloud",
 			"url": "https://sonarcloud.io",
 			"authorization": {
