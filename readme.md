@@ -6,6 +6,10 @@ This git repository basically created to give sample reference files in order to
 
 This extension displays the dashboard summary of distributed taskgroups, variablegroups and service connection after extecution of pipelines.
 
+# Azure Pipelines
+
+[![Build Status](https://dev.azure.com/csharpdocs-github/GitHub/_apis/build/status/Yaml/csharpdocs.azure-devops-distribution-tasks-json-samples?branchName=master)](https://dev.azure.com/csharpdocs-github/GitHub/_build/latest?definitionId=3&branchName=master)
+
 # Azure DevOps Marketplace
 
 Download and install [DES Azure Distribution Tasks](https://marketplace.visualstudio.com/items?itemName=XXX-DES-AZURE.DES-Azure-Distribution-Tasks) extension from [Microsoft Azure DevOps Marketplace](https://marketplace.visualstudio.com) and install in your organization.
