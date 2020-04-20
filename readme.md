@@ -40,7 +40,7 @@ Download and install [DES Azure Distribution Tasks](https://marketplace.visualst
     </br>Answer: Unfortunetely, we have not published the source code for extension however I would be glad if you could help us to create various service connection json files via pull request.
 
  1. Question: What type of service connection authorization scheme example this repository explains
-    </br>Answer: Please refer below table for authorization schemes covered 
+    </br>Answer: Please refer below table for authorization schemes covered </br>
          | Service Connection Name | Authorization Scheme | Useful for other types of connection |
          |---|---|---|
          | SonarCloud | Token | To be update |
