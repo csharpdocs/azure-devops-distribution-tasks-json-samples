@@ -37,7 +37,15 @@ Download and install [DES Azure Distribution Tasks](https://marketplace.visualst
    </br>Answer: No. I dont have any plans to provide it. The given taskgroups are for reference only. I will try to implement all services connections for reference in near future along with current(Splunk and SonarCloud). I never recommend to use Classic UI build pipelines to developers. I would strongly recommend Pipeline as a Code(Yaml).
 
  1. Question: I want to contribute for this extension.
-    </br>Answer: Unfortunetely, we have not published the source code for extension however I would be glad if you could help us to create various service connection json files via pull request.  
+    </br>Answer: Unfortunetely, we have not published the source code for extension however I would be glad if you could help us to create various service connection json files via pull request.
+
+ 1. Question: What type of service connection authorization scheme example this repository explains
+    </br>Answer: Please refer below table for authorization schemes covered 
+         | Service Connection Name | Authorization Scheme | Useful for other types of connection |
+         |-|-|-|
+         | SonarCloud | Token | To be update |
+         | Splunk | UsernamePassword | To be update |   
+         | Azure Resource Manager | ServicePrincipal | To be update |
 
  # Support  
    [Csharpdocs.com](www.csharpdocs.com) continuously seeking feedback about extension so that we can improve our extension. I encourage you to provide feedback on Microsoft DevOps marketplace [DES Azure Distribution Tasks](https://marketplace.visualstudio.com/items?itemName=ABNAMRO-DES-AZURE.DES-Azure-Distribution-Tasks&ssr=false#qna)

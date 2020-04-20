@@ -1,14 +1,14 @@
 {
 	"serviceconnection": [{
 		"id": "service-endpoint-splunk-connection",
-		"description": "Service endpoint type for Splunk connection",
+		"description": "Service endpoint type for splunk service connection",
 		"type": "ms.vss-endpoint.service-endpoint-type",
 		"targets": ["ms.vss-endpoint.endpoint-types"],
 		"properties": {
 			"data": {},
-			"description": "Service endpoint type for Splunk connection",
+			"description": "Service endpoint type for splunk service connection",
 			"id": "c7f81fb5-7510-4d0d-a62c-17b6e8512af6",				
-			"name": "splunk-p-sc",
+			"name": "sc-splunk-p",
 			"type": "generic",
 			"url": "https://xxx.xxx.xxx.xxx/services/collector/raw",			
 			"authorization": {
@@ -24,7 +24,7 @@
 		}
 	}],
 	"revision": 1,
-    "comment": "Azure DevOps Service Connection for Splunk",
+    "comment": "Azure DevOps service connection for splunk",
     "createdBy": {
         "displayName": "Your_Name",
         "id": "634b24c8-a69e-4538-84d0-3c4008ccd603",
@@ -39,8 +39,8 @@
     "modifiedOn": "2019-06-20T11:02:24.900Z",
     "id": "83f3003f-57a1-4e4f-b12b-ba3710ea9bb6",
     "name": "Desa.ServiceConnection.Splunk",
-    "friendlyName": "Des-Azure Compliant Splunk Service Connection",
-    "instanceNameFormat": "ServiceConnection: Des-Azure Compliant Splunk Service Connection",
+    "friendlyName": "Des-Azure compliant splunk service connection",
+    "instanceNameFormat": "ServiceConnection: Des-Azure compliant splunk service connection",
     "category": "ServiceConnection",
     "definitionType": "serviceconnection",
     "author": "Your_Name"
