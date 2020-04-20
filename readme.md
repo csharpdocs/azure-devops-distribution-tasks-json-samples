@@ -42,7 +42,7 @@ Download and install [DES Azure Distribution Tasks](https://marketplace.visualst
  1. Question: What type of service connection authorization scheme example this repository explains
     </br>Answer: Please refer below table for authorization schemes covered 
          | Service Connection Name | Authorization Scheme | Useful for other types of connection |
-         |-|-|-|
+         |---|---|---|
          | SonarCloud | Token | To be update |
          | Splunk | UsernamePassword | To be update |   
          | Azure Resource Manager | ServicePrincipal | To be update |
