@@ -52,14 +52,14 @@ jobs:
     #     TeamProjectsToTarget: 'Neither'
     #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json'
 
-    # - task: DES-Azure-Variablgroup-Distribution@2
-    #   displayName: 'VG Distribution - Files - Specific Projects'
-    #   inputs:
-    #     Token: '$(PersonalAccessToken)'
-    #     FileOrFolderSelector: 'Files'
-    #     TeamProjectsToTarget: 'TeamProjects'
-    #     Projects: 'Project1, Project2'
-    #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json, $(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample1.json'
+    - task: DES-Azure-Variablgroup-Distribution@2
+      displayName: 'VG Distribution - Files - Specific Projects'
+      inputs:
+        Token: '$(PersonalAccessToken)'
+        FileOrFolderSelector: 'Files'
+        TeamProjectsToTarget: 'TeamProjects'
+        Projects: 'Project1, Project2'
+        Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json, $(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample1.json'
 
     # - task: DES-Azure-Variablgroup-Distribution@2
     #   displayName: 'VG Distribution - Files - Exclude Projects'
@@ -182,12 +182,12 @@ jobs:
     #     CommitMessage: '$(Build.SourceVersionMessage)'
     #     Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
 
-    - task: DES-Azure-Serviceconnection-Distribution@2
-      displayName: 'SC Distribution - Files - Exclude Projects'
-      inputs:
-        Token: '$(PersonalAccessToken)'
-        FileOrFolderSelector: 'Files'
-        TeamProjectsToTarget: 'Exclude'
-        ExcludeTeamProjects: 'Project1, Project2'
-        CommitMessage: '$(Build.SourceVersionMessage)'
-        Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
+    # - task: DES-Azure-Serviceconnection-Distribution@2
+    #   displayName: 'SC Distribution - Files - Exclude Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     FileOrFolderSelector: 'Files'
+    #     TeamProjectsToTarget: 'Exclude'
+    #     ExcludeTeamProjects: 'Project1, Project2'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
