@@ -70,15 +70,15 @@ jobs:
     #     ExcludeTeamProjects: 'Project1, Project2'
     #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json, $(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample1.json'
 
-    # - task: DES-Azure-Taskgroup-Distribution@7
-    #   displayName: 'TG Distribution - Folder - All Projects'
-    #   inputs:
-    #     Token: '$(PersonalAccessToken)'
-    #     FileOrFolderSelector: 'Folder'
-    #     TeamProjectsToTarget: 'Neither'
-    #     CommitMessage: '$(Build.SourceVersionMessage)'
-    #     Folder: '$(Build.SourcesDirectory)\\\\Taskgroup'
-    #     DenyContributorEditPermission: false
+    - task: DES-Azure-Taskgroup-Distribution@7
+      displayName: 'TG Distribution - Folder - All Projects'
+      inputs:
+        Token: '$(PersonalAccessToken)'
+        FileOrFolderSelector: 'Folder'
+        TeamProjectsToTarget: 'Neither'
+        CommitMessage: '$(Build.SourceVersionMessage)'
+        Folder: '$(Build.SourcesDirectory)\\\\Taskgroup'
+        DenyContributorEditPermission: false
 
     # - task: DES-Azure-Taskgroup-Distribution@7
     #   displayName: 'TG Distribution - Folder - Specific Projects'
