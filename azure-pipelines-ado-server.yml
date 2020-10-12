@@ -22,7 +22,8 @@ jobs:
       displayName: 'VG Distribution - Folder - All Projects'
       inputs:
         Token: '$(PersonalAccessToken)'
-        IsAdoCloud: true
+        IsAdoCloud: false
+        ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
         FileOrFolderSelector: 'Folder'
         TeamProjectsToTarget: 'Neither'
         Folder: '$(Build.SourcesDirectory)\\\\Variablegroup'
@@ -31,7 +32,8 @@ jobs:
     #   displayName: 'VG Distribution - Folder - Specific Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Folder'
     #     TeamProjectsToTarget: 'TeamProjects'
     #     Projects: 'Project1, Project2'
@@ -41,7 +43,8 @@ jobs:
     #   displayName: 'VG Distribution - Folder - Exclude Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Folder'
     #     TeamProjectsToTarget: 'Exclude'
     #     ExcludeTeamProjects: 'Project1, Project2'
@@ -51,7 +54,8 @@ jobs:
     #   displayName: 'VG Distribution - Files - All Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'Neither'
     #     Files: '$(Build.SourcesDirectory)\\\\Variablegroup\\\\Sample.json'
@@ -60,7 +64,8 @@ jobs:
     #   displayName: 'VG Distribution - Files - Specific Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'TeamProjects'
     #     Projects: 'Project1, Project2'
@@ -70,7 +75,8 @@ jobs:
     #   displayName: 'VG Distribution - Files - Exclude Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'Exclude'
     #     ExcludeTeamProjects: 'Project1, Project2'
@@ -80,7 +86,8 @@ jobs:
       displayName: 'TG Distribution - Folder - All Projects'
       inputs:
         Token: '$(PersonalAccessToken)'
-        IsAdoCloud: true
+        IsAdoCloud: false
+        ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
         FileOrFolderSelector: 'Folder'
         TeamProjectsToTarget: 'Neither'
         CommitMessage: '$(Build.SourceVersionMessage)'
@@ -91,7 +98,8 @@ jobs:
     #   displayName: 'TG Distribution - Folder - Specific Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Folder'
     #     TeamProjectsToTarget: 'TeamProjects'
     #     Projects: 'Project1, Project2'
@@ -103,7 +111,8 @@ jobs:
     #   displayName: 'TG Distribution - Folder - Exclude Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Folder'
     #     TeamProjectsToTarget: 'Exclude'
     #     ExcludeTeamProjects: 'Project1, Project2'
@@ -115,7 +124,8 @@ jobs:
     #   displayName: 'TG Distribution - Files - All Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'Neither'
     #     CommitMessage: '$(Build.SourceVersionMessage)'
@@ -126,7 +136,8 @@ jobs:
     #   displayName: 'TG Distribution - Files - Specific Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'TeamProjects'
     #     Projects: 'Project1, Project2'
@@ -138,7 +149,8 @@ jobs:
     #   displayName: 'TG Distribution - Files - Exclude Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'Exclude'
     #     ExcludeTeamProjects: 'Project1, Project2'
@@ -150,7 +162,8 @@ jobs:
       displayName: 'SC Distribution - Folder - All Projects'
       inputs:
         Token: '$(PersonalAccessToken)'
-        IsAdoCloud: true
+        IsAdoCloud: false
+        ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
         FileOrFolderSelector: 'Folder'
         TeamProjectsToTarget: 'Neither'
         CommitMessage: '$(Build.SourceVersionMessage)'
@@ -160,7 +173,8 @@ jobs:
     #   displayName: 'SC Distribution - Folder - Specific Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Folder'
     #     TeamProjectsToTarget: 'TeamProjects'
     #     Projects: 'Project1, Project2'
@@ -171,7 +185,8 @@ jobs:
     #   displayName: 'SC Distribution - Folder - Exclude Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Folder'
     #     TeamProjectsToTarget: 'Exclude'
     #     ExcludeTeamProjects: 'Project1, Project2'
@@ -182,7 +197,8 @@ jobs:
     #   displayName: 'SC Distribution - Files - All Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'Neither'
     #     CommitMessage: '$(Build.SourceVersionMessage)'
@@ -192,7 +208,8 @@ jobs:
     #   displayName: 'SC Distribution - Files - Specific Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'TeamProjects'
     #     Projects: 'Project1, Project2'
@@ -203,7 +220,8 @@ jobs:
     #   displayName: 'SC Distribution - Files - Exclude Projects'
     #   inputs:
     #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
+    #     IsAdoCloud: false
+    #     ServerUrl: 'https://dev.csharpsdocs.azure.com/DefaultCollection/'
     #     FileOrFolderSelector: 'Files'
     #     TeamProjectsToTarget: 'Exclude'
     #     ExcludeTeamProjects: 'Project1, Project2'
