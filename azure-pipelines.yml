@@ -146,15 +146,15 @@ jobs:
     #     Files: '$(Build.SourcesDirectory)\\\\Taskgroup\\\\AspNetCore.json, $(Build.SourcesDirectory)\\\\Taskgroup\\\\Python.json'
     #     DenyContributorEditPermission: false
 
-    - task: DES-Azure-Serviceconnection-Distribution@3
-      displayName: 'SC Distribution - Folder - All Projects'
-      inputs:
-        Token: '$(PersonalAccessToken)'
-        IsAdoCloud: true
-        FileOrFolderSelector: 'Folder'
-        TeamProjectsToTarget: 'Neither'
-        CommitMessage: '$(Build.SourceVersionMessage)'
-        Folder: '$(Build.SourcesDirectory)\\\\Serviceconnection'
+    # - task: DES-Azure-Serviceconnection-Distribution@3
+    #   displayName: 'SC Distribution - Folder - All Projects'
+    #   inputs:
+    #     Token: '$(PersonalAccessToken)'
+    #     IsAdoCloud: true
+    #     FileOrFolderSelector: 'Folder'
+    #     TeamProjectsToTarget: 'Neither'
+    #     CommitMessage: '$(Build.SourceVersionMessage)'
+    #     Folder: '$(Build.SourcesDirectory)\\\\Serviceconnection'
 
     # - task: DES-Azure-Serviceconnection-Distribution@3
     #   displayName: 'SC Distribution - Folder - Specific Projects'
@@ -178,15 +178,15 @@ jobs:
     #     CommitMessage: '$(Build.SourceVersionMessage)'
     #     Folder: '$(Build.SourcesDirectory)\\\\Serviceconnection'        
 
-    # - task: DES-Azure-Serviceconnection-Distribution@3
-    #   displayName: 'SC Distribution - Files - All Projects'
-    #   inputs:
-    #     Token: '$(PersonalAccessToken)'
-    #     IsAdoCloud: true
-    #     FileOrFolderSelector: 'Files'
-    #     TeamProjectsToTarget: 'Neither'
-    #     CommitMessage: '$(Build.SourceVersionMessage)'
-    #     Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
+    - task: DES-Azure-Serviceconnection-Distribution@3
+      displayName: 'SC Distribution - Files - All Projects'
+      inputs:
+        Token: '$(PersonalAccessToken)'
+        IsAdoCloud: true
+        FileOrFolderSelector: 'Files'
+        TeamProjectsToTarget: 'Neither'
+        CommitMessage: '$(Build.SourceVersionMessage)'
+        Files: '$(Build.SourcesDirectory)\\\\Serviceconnection\\\\SonarCloud.json, $(Build.SourcesDirectory)\\\\Serviceconnection\\\\Splunk.json'
 
     # - task: DES-Azure-Serviceconnection-Distribution@3
     #   displayName: 'SC Distribution - Files - Specific Projects'
