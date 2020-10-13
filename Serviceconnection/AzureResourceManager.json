@@ -8,7 +8,7 @@
 			"data": {
                 "environment": "AzureCloud",
                 "SubscriptionId" : "your_azure_subscription_guid",
-                "SunscriptionName": "your_azure_subscription_name",
+                "SubscriptionName": "your_azure_subscription_name",
                 "creationMode": "Manual"
             },
 			"description": "Service endpoint type for azure resource manager connection",
